@@ -21,3 +21,9 @@ Create migration
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
+Build & push on docker
+```bash
+docker build -t jakirbd/aspnetcore-app .
+docker push jakirbd/aspnetcore-app
+```
