@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +17,7 @@ jobs:
     - name: 🛠️ Setup .NET Core SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' # Match your project version
+        dotnet-version: '8.0.x'  # Replace with your actual .NET version
 
     - name: 📦 Restore dependencies
       run: dotnet restore
